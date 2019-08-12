@@ -26,15 +26,19 @@ div{
 }
 
 
-ul{
+.div-Ul{
     list-style-type:none;
     text-align: center;
     /*display: table*/
     margin-bottom: 10px;
     margin-top: 20px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
 }
 
-li{
+.div-Ul-li{
     margin: 0 0 3px 0;
     border: 1px solid black;
     background-color: #0f84e8;
