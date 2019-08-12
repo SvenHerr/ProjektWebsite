@@ -10,6 +10,43 @@ body {
     color: #fff
 }
 
+main,
+header,
+section,
+aside,
+footer {
+    margin: 0;
+    display: block;
+    padding: 1.25rem;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+footer {
+    margin-top: 1em;
+    align-self: center;
+}
+
+footer iframe {
+    /* Warum funktioniert manchmal margin nicht?? */
+    margin: 1em;
+}
+
+.footer {
+    background: #616161;
+}
+
+.footer,
+.sidebar {
+    border: 1px solid #000
+}
+
+iframe {
+    align-self: center;
+    vertical-align: middle;
+    /*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#0f84e8),color-stop(100%,#0f84e8));*/
+}
+
 h1,
 h2 {
     color: black;
@@ -28,6 +65,10 @@ p {
 
 div {
     text-align: center;
+}
+
+div a {
+    margin: 2em;
 }
 
 .div-Ul {
@@ -90,38 +131,6 @@ li a:active {
     text-decoration: underline;
 }
 
-iframe {
-    align-self: center;
-    vertical-align: middle;
-    /*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#0f84e8),color-stop(100%,#0f84e8));*/
-}
-
-footer iframe {
-    /* Warum funktioniert manchmal margin nicht?? */
-    margin: 1em;
-}
-
-div a {
-    margin: 2em;
-}
-
-footer {
-    margin-top: 1em;
-    align-self: center;
-}
-
-main,
-header,
-section,
-aside,
-footer {
-    margin: 0;
-    display: block;
-    padding: 1.25rem;
-    border: 1px solid #000;
-    color: #fff;
-}
-
 .content {
     flex: 1;
     /*flex-grow: 1;
@@ -132,15 +141,6 @@ footer {
 .sidebar {
     flex: 0 1 300px;
     background: #673ab7;
-}
-
-.footer {
-    background: #616161;
-}
-
-.footer,
-.sidebar {
-    border: 1px solid #000
 }
 
 @media screen and (min-width:640px) {
