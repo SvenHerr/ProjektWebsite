@@ -6,6 +6,23 @@
     <title>Sven´s project page </title>
     <link href="css/StyleSheet.css" rel="stylesheet" type="text/css">
     <script src="files/svensprojectpageScript.js"></script>
+
+    <!--Start JQueri UI -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Accordion - Collapse content</title>
+    <link rel="stylesheet" href="css/jQueryThemesBase.css">
+    <link rel="stylesheet" href="css/jqeryuiStyle.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion({
+                collapsible: true
+            });
+        });
+    </script>
+    <!--Ende JQueri UI -->
+
 </head>
 
 <body>
@@ -14,7 +31,7 @@
         <!-- Header -->
         <header>
             <div>
-                <h1 id="testID">Welcome to Sven´s project page</h1><br>
+                <h1 id="testID">Welcome to Sven's project page</h1><br>
             </div>
         </header>
 
@@ -30,6 +47,40 @@
             <!-- Content -->
             <section class="content">
                 <div>
+
+                    <!--Start JQuery UI-->
+                    <div id="accordion" class="ui-accordion ui-widget ui-helper-reset">
+                        <h3>
+                            Projekt 1</h3>
+                        <div>
+                            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio.
+                                Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                        </div>
+                        <h3><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Projekt 2</h3>
+                        <div>
+                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit
+                                faucibus urna. </p>
+                        </div>
+                        <h3><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Projekt 3</h3>
+                        <div>
+                            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia
+                                ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                            <ul>
+                                <li>List item one</li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                            </ul>
+                        </div>
+                        <h3><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Projekt 4</h3>
+                        <div>
+                            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
+                            </p>
+                            <p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                        </div>
+                    </div>
+                    <!--Ende JQuery UI-->
+
+
                     <ul class="div-Ul">
                         <li class="div-Ul-li"><a href="https://github.com/SvenHerr/Codingproblems" target="_blank" title="Go to GitHub and view source code">Gelöste Codingproblems von HackerRank ( Fokus auf Java )</a>
                             <!--<iframe src="https://ghbtns.com/github-btn.html?user=SvenHerr&repo=Codingproblems&type=star&count=false&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>-->
@@ -55,9 +106,45 @@
 
             <!-- Sidebar -->
             <aside class="sidebar">
-                <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    <p>
+                <div>
+                    <p>Hier gibts den source code zu meinen Projekten!</p>
+                    <ul class="div-Ul">
+                        <div class="hasBorder">
+                            <p>Focus on Java</p>
+                            <li class="sidebar-li"><a href="https://github.com/SvenHerr/Codingproblems" target="_blank" title="Go to GitHub and view source code">Codingproblems von HackerRank</a>
+                                <!--<iframe src="https://ghbtns.com/github-btn.html?user=SvenHerr&repo=Codingproblems&type=star&count=false&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>-->
+                                <!--<iframe src="frameQuellText_githubStarButton.html?user=SvenHerr&repo=Codingproblems&type=star&count=false&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>-->
+                            </li>
+                        </div>
+                        <div class="hasBorder">
+                            <p>Focus on Android, Java</p>
+                            <li class="sidebar-li"><a href="https://github.com/SvenHerr/ProzentRechnerErweitert" target="_blank" title="Go to GitHub and view source code">Prozentrechner ( erste Test App in Android Studio ) ( Fokus auf Android, Java )</a>
+                                <!--<iframe src="frameQuellText_githubStarButton.html?user=SvenHerr&repo=ProzentRechnerErweitert&type=star&count=false&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>-->
+                            </li>
+                        </div>
+                        <div class="hasBorder">
+                            <p>Focus on HTML / CSS</p>
+                            <li class="sidebar-li"><a href="https://github.com/SvenHerr/ProjektWebsite" target="_blank" title="Go to GitHub and view source code">Projekt Webseite ( Fokus auf HTML / CSS ) </a>
+                                <!--<iframe src="frameQuellText_githubStarButton.html?user=SvenHerr&repo=ProjektWebsite&type=star&count=false&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>-->
+                            </li>
+                        </div>
+                        <div class="hasBorder">
+                            <p>Focus on JavaScript</p>
+                            <li class="sidebar-li"><a href="https://svenherr.github.io/TicTacToeGameWebsite/" target="_blank" title="Go to Website">TicTacToe Game Website ( Fokus auf JavaScript )</a>
+                                <!--<iframe  src="frameQuellText_githubStarButton.html?user=SvenHerr&repo=TicTacToeGameWebsite&type=star&count=false&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>-->
+                            </li>
+                        </div>
+                        <div class="hasBorder">
+                            <p>Focus on C#</p>
+                            <li class="sidebar-li"><a href="">Projekt 2 ( Fokus auf C# )</a></a>
+                            </li>
+                        </div>
+                        <div class="hasBorder">
+                            <p>Focus on HTML / CSS / JavaScript</p>
+                            <li class="sidebar-li"><a href="">Projekt 3 ( Fokus auf HTML / CSS / JavaScript )</a></li>
+                        </div>
+                    </ul>
+                </div>
             </aside>
         </div>
         <!-- Footer -->
@@ -66,8 +153,8 @@
                 <p>Wenn dir meine Projekte gefallen haben oder ich dir helfen konnte, dann freue ich mich auf einen Star bei GitHub</p>
                 <a class="github-button" href="https://github.com/SvenHerr" data-size="large" aria-label="Follow @SvenHerr on GitHub">Follow @SvenHerr</a>
                 <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="de_DE" data-type="vertical" data-theme="dark" data-vanity="sven-herrmann"><a class="LI-simple-link" target="_blank" href='https://de.linkedin.com/in/sven-herrmann?trk=profile-badge'>Sven Herrmann</a>
-
                 </div>
+
         </footer>
 
     </main>
@@ -78,7 +165,6 @@
 </body>
 
 <footer>
-
 
 </footer>
 
