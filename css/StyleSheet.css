@@ -79,7 +79,7 @@ div a {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    /*width: 700px;*/
+    /*min-width: 600px; */
 }
 
 .div-Ul-li {
@@ -143,13 +143,20 @@ li a:active {
     background: #673ab7;
 }
 
+@media screen and (max-width:641px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
 @media screen and (min-width:640px) {
     .flex-container {
-        display: flex
+        display: flex;
     }
 }
 
 .wrapper {
     margin: auto;
-    max-width: 75rem
+    max-width: 75rem;
 }
