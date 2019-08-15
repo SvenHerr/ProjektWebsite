@@ -39,11 +39,6 @@ header {
     background: darkgray;
 }
 
-section {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-}
-
 footer {
     margin-top: 1rem;
     align-self: center;
@@ -167,8 +162,6 @@ li a:active {
 .sidebar {
     flex: 0 1 250px;
     background: #673ab7;
-    margin-left: 21px;
-    margin-right: 21px;
     margin-top: 50px;
 }
 
@@ -187,11 +180,20 @@ li a:active {
     .sidebar {
         margin-top: 0px;
     }
+    section {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .sidebar {
+        flex: 0 1 250px;
+        margin-left: 21px;
+        margin-right: 21px;
+    }
 }
 
 .wrapper {
     margin: auto;
-    max-width: 75rem;
+    max-width: 90rem;
 }
 
 .sidebar-li {
