@@ -19,6 +19,10 @@ body {
     color: #fff;
 }
 
+main {
+    border: 1px solid black;
+}
+
 main,
 header,
 aside,
@@ -163,6 +167,9 @@ li a:active {
 .sidebar {
     flex: 0 1 250px;
     background: #673ab7;
+    margin-left: 21px;
+    margin-right: 21px;
+    margin-top: 50px;
 }
 
 
@@ -176,6 +183,9 @@ li a:active {
     .flex-container {
         display: flex;
         flex-direction: row;
+    }
+    .sidebar {
+        margin-top: 0px;
     }
 }
 
