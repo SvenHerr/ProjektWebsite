@@ -11,9 +11,14 @@ html {
     animation: fadein 3s;
 }
 
+
+/* padding von main,header,aside,footer
+    body
+*/
+
 body {
     margin: 0;
-    padding: 10px;
+    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: #fff;
@@ -25,15 +30,17 @@ aside,
 footer {
     margin: 0;
     display: block;
-    padding: 0.5rem;
+    /*padding: 0.5rem;*/
     /*border: 1px solid #000;*/
     color: #fff;
     background: lightgray;
 }
 
+
+/*
 main {
     border: 2px solid black;
-}
+}*/
 
 header {
     background: darkgray;
@@ -200,6 +207,10 @@ li a:active {
     margin: 20px;
 }
 
+.test1 {
+    margin-left: 10px;
+}
+
 @media screen and (min-width:900px) {
     .flex-container {
         display: flex;
@@ -208,21 +219,25 @@ li a:active {
     .sidebar {
         margin-top: 0px;
     }
+    /*
     section {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
-    }
+    }*/
     .sidebar {
         flex: 0 1 250px;
         margin-left: 21px;
         margin-right: 21px;
     }
     body {
-        padding: 20px;
+        padding: 0;
     }
     .sidebar-li {
         margin: 10px;
         width: auto;
+    }
+    .content {
+        margin-left: 20px;
     }
 }
 
